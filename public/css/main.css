@@ -1,0 +1,57 @@
+body{
+    background-color: white;
+    padding:10px;
+    font-size: small;
+}
+td{
+    font-size: small;
+
+}
+.top--image{
+    width: 70px;
+    height: 70px;
+}
+.top--div{
+    display: -webkit-box;
+    -webkit-box-pack: justify;
+}
+.top--heading{
+    display: block;
+    text-align: center;
+}
+.main--heading{
+    text-align: center;
+    text-decoration: underline;
+}
+.table{
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    align-items: center;
+}
+
+.table--content{
+  width: 80%;
+  border-spacing: 0;
+
+}
+
+.subheading{
+    font-weight: bold;
+    text-decoration: underline;
+}
+.payment--table{
+    margin-left: 15px;
+}
+.payment--heading{
+   font-weight: bold;
+}
+.table--bottom{
+    -webkit-box-pack: justify;
+}
+.table--bottom--content{
+   width: 100%;
+  }
+  .bottom--content--right{
+    text-align: end;
+  }
+

@@ -1,0 +1,107 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Notice</title>
+    <link rel="stylesheet" href="../css//Bensenville_first_notice.css">
+    
+</head>
+<body>
+    <div class="top--div">
+        <img class="top--image" src="https://w.forfun.com/fetch/8b/8bc5a66b27fc36e5255dc7c1356939c8.jpeg" alt="road_image">
+        <div class="top--heading">
+        <h3>{{{name}}}</h3>
+        <p>{{bottomline}}</p>
+        </div>
+        <p>07/21/2023</p>
+    </div>
+    <div class="heading">
+        <h3>NOTICE TO APPEAR</h3>
+        <p> for Bensenville Municipal Hearing in the County of DuPage,<br>
+            State of IL for Municipality of Bensenville</p>
+    </div>
+    <div class="details">
+        <p>
+            <!-- {{{address}}} -->
+            ELIZABETH U MIDDLETON <br> 01612 SANDY ROAD APT. 817  Quicket City , IL 60606
+        </p>
+    </div>
+
+        <table class="data--table">
+            <tr>
+                <th>Citation #</th>
+                <th>Issued On</th>
+                <th> Offense #</th>
+                <th>Due Date</th>
+                <th>Current Fine</th>
+            </tr>
+            <tr>
+                <td>{{citationno}}</td>
+                <td>{{issuedon}}</td>
+                <td>{{offenseno}}</td>
+                <td> {{duedate}}</td>
+                <td>{{currentfine}}</td>
+            </tr>
+            <tr>
+                <td><b>Offense: </b></td>
+                <td colspan="4">{{offense}}</td>
+            </tr>
+            <tr>
+                <td><b>Location: </b></td>
+                <td colspan="4">{{location}}</td>
+            </tr>
+        </table>
+    <div class="data">
+        {{#each paragraphs}}
+            <p>{{{this}}}</p>
+        {{/each}}
+    </div>
+    <p class="subheading">
+        Please make payment at one of the following:
+    </p>
+    <div class="payment--details">
+    <table class="payment--table">
+        <tr>
+            <td>
+                On Line:
+            </td>
+            <td> www.payquicket.com</td>
+        </tr> 
+        <tr>
+            <td>
+                In Person:
+
+            </td>
+            <td>{{inperson}}</td>
+        </tr>  
+        <tr>
+            <td>
+                By Mail: 
+
+            </td>
+            <td>{{bymail}}</td>
+        </tr> 
+
+       
+      
+    </table>
+    </div>
+ 
+    <div>
+        <hr  size="1"  color="black">
+        <table class="hearing medium">
+            <tr>
+                <td>Hearing Location:</td>
+                <td>{{{hearinglocation}}}</td>
+                <td>{{phonennumber}}</td>
+            </tr>
+            <tr>
+                <td>Hearing Date:</td>
+                <td>{{hearingdate}} </td>
+                <td>{{hearingtime}}</td>
+            </tr>
+        </table>
+        <hr  size="1"  color="black">
+    </div>
+</body>
+</html>

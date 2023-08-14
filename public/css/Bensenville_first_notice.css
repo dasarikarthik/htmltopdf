@@ -1,0 +1,73 @@
+body{
+    background-color: white;
+    padding: 10px 40px;
+    font-size: small;
+}
+.top--div{
+    display: -webkit-box;
+    -webkit-box-pack: justify;
+}
+
+.top--image{
+    width: 70px;
+    height: 70px;
+}
+.top--heading{
+    display: block;
+    text-align: center;
+}
+.heading{
+    text-align: center;
+}
+.details{
+    width: 50%;
+    margin-top: 40px;
+    margin-left: 80px;
+}
+table{
+    width: 100%; 
+    border-collapse: collapse; 
+    font-size: small;
+}
+
+.data--table th{
+    
+    border-bottom:1px solid #ddd;
+    border-top:1px solid #ddd;
+    text-align: left;
+}
+.data--table td{
+    padding: 5px;
+}
+.data--table tr:last-child td {
+    border-bottom: 1px solid #ddd;
+  }
+.data{
+   text-align: justify;
+   font-size: medium;
+ }
+.subheading{
+    font-weight: bold;
+
+}
+.payment--details{
+    display: flex;
+    font-size: small;
+    width: 80%;
+    margin: 0 auto;
+   
+}
+
+.hearing{
+    font-weight: bold;
+    border-collapse: separate;
+      border-spacing: 0 10px; 
+      width: 100%;
+      justify-content: space-between;
+}
+.hearing td{
+    vertical-align: bottom;
+}
+.medium{
+    font-size: 1.1em;
+}

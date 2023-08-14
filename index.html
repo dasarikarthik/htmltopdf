@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Download</title>
+<style>
+  body{
+    padding:20px;
+  }
+</style>
+</head>
+<body>
+  <form>
+    <label>
+      <input type="radio" name="options" value="Bensenville_summon_notice"> Summon Notice
+    </label>
+    <br>
+    <label>
+      <input type="radio" name="options" value="Bensenville_first_notice"> First Notice
+    </label>
+    <br>
+    <label>
+      <input type="radio" name="options" value="Bensenville_payment"> Bensenville Payment
+    </label>
+    <br>
+    <label>
+      <input type="radio" name="options" value="traffic"> Traffic
+    </label>
+    <br>
+    <br>
+    <button type="button" onclick="checkOption()">Check Selected Option</button>
+  </form>
+  
+  <script>
+    async function generate_pdf(name,width,height){
+        try {
+               const response = await fetch(`http://localhost:5500/${name}?width=${width}&height=${height}`); // Replace with the appropriate filename
+               if (response.ok) {
+                   const blob = await response.blob();
+                   const url = window.URL.createObjectURL(blob);
+                   const a = document.createElement('a');
+                   a.href = url;
+                   a.download = `${name}.pdf`;
+                   document.body.appendChild(a);
+                   a.click();
+                   document.body.removeChild(a);
+                   window.URL.revokeObjectURL(url);
+               } else {
+                   console.error('Error generating or downloading PDF:', response.status, response.statusText);
+               }
+           } catch (error) {
+               console.error('Error generating or downloading PDF:', error);
+           }
+    }
+    function checkOption() {
+      const selectedOption = document.querySelector('input[name="options"]:checked');
+      if (selectedOption) {
+        if(selectedOption.value==="traffic"){
+          generate_pdf(selectedOption.value,380,980);
+        }
+        else{
+          generate_pdf(selectedOption.value,595,842);
+        }
+      } else {
+        alert('Please select an option.');
+      }
+    }
+  </script>
+</body>
+</html> 

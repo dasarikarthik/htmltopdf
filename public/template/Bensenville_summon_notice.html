@@ -1,0 +1,116 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bensenville_summon_notice</title>
+    <link rel="stylesheet" href="../css/Bensenville_summon_notice.css">
+</head>
+<body>
+    <div class="top--div">
+        <img class="top--image" src="https://w.forfun.com/fetch/8b/8bc5a66b27fc36e5255dc7c1356939c8.jpeg" alt="road_image">
+        <div class="top--heading">
+        <h4>{{{name}}}</h4>
+        <p>{{bottomline}}</p>
+        </div>
+        <p>06/26/2023</p>
+    </div>
+    <div class="heading">
+        <h4>FIRST NOTICE TO APPEAR</h4>
+        <p> IN THE ADMINISTRATIVE ADJUDICATION COURT OF THE <br>
+            VILLAGE OF BENSENVILLE <br>
+            DUPAGE COUNTY, ILLINOIS 60106
+        </p>
+    </div>
+
+    <div class="table">
+        <table class="table--content">
+            <tr >
+                <td >State of Illinios, County of Dupage <br>
+                    The Village of Bensenville, a <br>
+                    Munciplaity Plaintiff v. <br>
+                    </td>
+                <td rowspan="2" style="vertical-align: bottom; line-height: 1.5;">
+                        Docket # <span class="underline">{{docket}} </span><br>
+                        Case #<span class="underline">{{case}}</span> <br>
+                        Ticket #<span class="underline">{{ticket}}</span> <br>
+                        Hearing Date: <span class="underline">{{hearingDate}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding-right: 15%; ">
+                    ELIZABETH U MIDDLETON <br> 01612 SANDY ROAD APT. 817  Quicket City , IL 60606
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <table class="data--table">
+        <tr>
+            <th>Citation #</th>
+            <th>Issued On</th>
+            <th> Offense #</th>
+            <th>Due Date</th>
+            <th>Current Fine</th>
+        </tr>
+        <tr>
+            <td>{{citationno}}</td>
+            <td>{{issuedon}}</td>
+            <td>{{offenseno}}</td>
+            <td> {{duedate}}</td>
+            <td>{{currentfine}}</td>
+        </tr>
+        <tr>
+            <td><b>Offense: </b></td>
+            <td colspan="4">{{offense}}</td>
+        </tr>
+        <tr>
+            <td><b>Location: </b></td>
+            <td colspan="4">{{location}}</td>
+        </tr>
+    </table>
+
+    <div class="content">
+        <p>THE UNDERSIGNED STATES THAT ON 06/21/2023 at 03:41:09</p>
+        <span>THIS DEFENDANT DID UNLAWFULLY COMMIT THE OFFENSE SHOWN ABOVE</span> <br>
+        <span>(Additional detail may follow) </span> <br>
+        <span>(citation narrative)</span>
+        <p>This is a Notice to Appear. You must appear in court, in person, on the date and time shown below.</p>
+        <p>Failure to appear may result in a Default Judgement against you, including a fine in the amount set forth in the Village Code, in accordance
+            with Ordinance Number 18-2011, up to $750.00 (1-4-1) for each day the offense remains in violation of the Village Code, along with court
+            costs. And you will further be required to bring the property into full compliance with the Village code within 30 days of judgement</p>
+        <p>In accordance with Village of Bensenville Ordinance 18-2011, as approved on February 8,2011, and as amended from time to the the
+            Defendant may be responsible for fines up to $750.00 (1-4-1) for each day the offense remains in violation of Village Ordinance
+        </p>
+        <p>
+            Under penalties as provided by law for false identification pursuant to Section 1109 of the Code of Civil Procedure, the undersigned
+            certifies that the statements set forth in this complaint are true and correct.
+        </p>
+    </div>
+
+    <div class="signature medium">
+        <p>Signed and sworn before me: (Inspector)</p>
+    </div>
+
+    <div>
+        <hr  size="1"  color="black">
+        <table class="hearing">
+            <tr>
+                <td>Hearing Location:</td>
+                <td>{{{hearinglocation}}}</td>
+                <td>{{phonennumber}}</td>
+            </tr>
+            <tr>
+                <td>Hearing Date:</td>
+                <td>{{hearingdate}} </td>
+                <td>{{hearingtime}}</td>
+            </tr>
+        </table>
+        <hr  size="1"  color="black">
+    </div>
+
+    <div>
+        <p class="medium">FOR ANY GENERAL QUESTIONS REGARDING THIS NOTICE, PLEASE CALL 630.350.3413</p>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+body{
+    background-color: white;
+    padding: 10px 30px;
+    font-size: 1rem;
+    display: block;
+}
+.top--div{
+    display: -webkit-box;
+    -webkit-box-pack: justify;
+}
+
+.top--image{
+    width: 70px;
+    height: 70px;
+}
+.top--heading{
+    display: block;
+    text-align: center;
+}
+.vertical-text{
+    transform: rotate(-90deg);
+
+    
+   
+}
+.heading{
+    text-align: center;
+}
+
+.table{
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    align-items: center;
+    font-size: small;
+}
+
+.table--content{
+  width: 80%;
+  border-collapse: separate;
+  /* table-layout: fixed; */
+  border-spacing: 0 10px;
+  font-size: small;
+
+}
+.table--content td{
+    word-wrap: break-word;
+}
+
+.data--table{
+    width: 100%; 
+    border-collapse: collapse; 
+    font-size: small;
+}
+.data--table th{
+    
+    border-bottom:1px solid #ddd;
+    border-top:1px solid #ddd;
+    text-align: left;
+}
+.data--table td{
+    padding: 5px;;
+}
+.data--table tr:last-child td {
+    border-bottom: 1px solid #ddd;
+}
+.content{
+    text-align: justify;
+    font-size: small;
+}
+.signature{
+    text-align: end;
+    margin-right: 5%;
+}
+
+.hearing{
+    font-weight: bold;
+    border-collapse: separate;
+    table-layout: fixed;
+    border-spacing: 0 10px; 
+    width: 100%;
+    justify-content: space-between;
+    font-size: 0.8em;
+}
+.hearing td{
+    vertical-align: bottom;
+    word-wrap: break-word;
+}
+hr{
+    padding: 0;
+    margin: 0;
+}
+.underline{
+     text-decoration: underline;
+}
+.small{
+    font-size: small;
+}
+.medium{
+    font-size: medium;
+}

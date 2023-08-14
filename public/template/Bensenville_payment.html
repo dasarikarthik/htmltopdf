@@ -1,0 +1,91 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bensenville payment</title>
+    <link rel="stylesheet" href="../css/Bensenville_payment.css">
+</head>
+<body>
+    <div class="heading">
+        <div>
+            <h2 style="margin: 0; padding: 0px; margin-top: 15px;">
+                Bensenville Police Department
+            </h2>
+            <span>
+                345 E Green St Bensenville IL 60106
+            </span> <br>
+            <span>
+                (847) 968-4600
+            </span>
+        </div>
+        <div>
+            <h3>
+                Ticket Status: Unpaid
+            </h3>
+        </div>
+    </div>
+
+    <div class="violator--details">
+        <span>
+            Violator Name: {{violatorname}}
+        </span> <br>
+        <span>
+            Violator Address: <br>
+            {{{violatoraddress}}}
+        </span>
+    </div>
+    <div class="ticket--details">
+        <span>
+           <b>Ticket #:</b>  {{ticketno}}
+        </span> <br>
+        <span> 
+           <b>Violation:</b>  {{violation}}
+        </span>
+    </div>
+    <hr style="margin: 2% 0;" size="1"  color="black">
+
+    <div class="payor--details">
+        <span>
+            Payor Name: {{payorname}}
+        </span> <br>
+        <span>
+            Payor Address: <br>
+            {{{payoraddress}}}
+        </span>
+    </div>
+
+    <div class="payment--details">
+        <table class="payment--table">
+            <tr>
+                <td>Payment Amount Due:</td>
+                <td>$247.00</td>
+            </tr>
+            <tr>
+                <td>Payment Amount: </td>
+                <td>$1.00</td>
+            </tr>
+            <tr>
+                <td>Remaining Amount:</td>
+                <td>$246.00 </td>
+            </tr>
+            <tr>
+                <td>Payment Date:</td>
+                <td>07/26/2023</td>
+            </tr>
+            <tr>
+                <td>Payment Type:</td>
+                <td>cash</td>
+            </tr>
+            <tr>
+                <td>Check Number: </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="footer">
+        <p>Payment</p>
+        <p>Receipt # BEN100004</p>
+        <p>07/26/2023</p>
+    </div>
+</body>
+</html>
